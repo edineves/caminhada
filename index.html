@@ -1,39 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/estilos/estilos.css">
+    <link rel="stylesheet" href="incluirDados.php">
+    <link rel="stylesheet" href="excluirDados.php">
+    <link rel="stylesheet" href="listagem.php">
+
+
     <title> caminhada </title>
 </head>
-<body>
+
+<body class="corpo">
     <title> caminhada </title>
 
     <form action="" method="get" class="formulario">
-        
-        <div class="form-example">
-          <label for="name"> name: </label>
-          <input type="text" name="name" id="name" required>
+        <div class="input">
+            <label for="dia"> dia </label>
+            <input type="date" name="dia" id="dia" required>
         </div>
-        <div class="form-example">
-          <label for="email"> obs: </label>
-          <input type="email" name="email" id="email" required>
-        </div>      
+        <div class="input">
+            <label for="nome"> nome </label>
+            <input type="text" name="nome" id="nome" required>
+        </div>
+        <div class="input">
+            <label for="quilos"> peso </label>
+            <input type="number" name="quilos" id="quilos" required> </div>
+        </div>
         <fieldset>
-          <legend> Tipo </legend>
-          <label><input type="radio" name="radio"> caminhada </label> 
-          <label><input type="radio" name="radio"> bicicleta </label>           
-        </fieldset> 
-
-        <div class="form-example">
-          <input type="submit" value="Subscribe!">
+            <legend> Tipo </legend>
+            <label><input type="radio" name="tipo" checked> caminhada </label>
+            <label><input type="radio" name="tipo"> bicicleta </label>
+        </fieldset>
+        <div class="input">
+            <label for="horaSaida"> hora de início </label>
+            <input type="time" name="horaSaida" id="horaSaida" required>
         </div>
-        
-          
-        
-      </form>
-      
-    
+        <div class="input">
+            <label for="tempo"> tempo </label>
+            <input type="tempo" name="tempo" id="tempo" required>
+        </div>
+        <div class="input">
+            <label for="distancia"> distância </label>
+            <input type="text" name="nome" id="nome" required>
+        </div>
+        <div class="input">
+            <label for="obs"> observações </label>
+            <input type="text" name="obs" id="obs" required>
+        </div>
+        <div class="form-example">
+            <input type="submit" value=" enviar dados">
+        </div>
+    </form>
 </body>
+
 </html>
