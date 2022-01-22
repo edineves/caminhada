@@ -6,6 +6,7 @@
 
 		<title> Inclusão de dados da caminhada </title>
 
+		<link rel="stylesheet" href="assets/reset.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
     	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
@@ -62,39 +63,32 @@
 			{
 				die(" Informe <b>distancia</b> válida. Sistema interrompido.");
 			}
-			           
+
             if ($obs==" ")
 			{
 				die("Informe <b>obs</b> válido. Sistema interrompido.");
 			}
 			
 			// 3 - Exibindo os dados vindos do formulário
-			echo "dias na estrada <b>$dia</b><br>";
-			echo "Local de inicio da viajem <b>$localSaida</b><br>";
-			echo "data do inicio do trecho: <b>$dataSaida</b><br>";
-			echo "hora de saida: <b>$horaSaida</b><br>";
-			echo "data de chegada no destino: <b>$dataChegada</b><hr>";
-            echo "hora de chegada no destino: <b>$horaChegada</b><br>";
-			echo "Nome do local de chegada: <b>$localChegada</b><br>";
-			echo "Distância percorrida: <b>$kmPercorrido</b><br>";
-			echo "valor pago em gasolina: <b>$gasolina</b><br>";
-			echo "valor pago com pedágio: <b>$pedagio</b><hr>";
-            echo "valor pago com refeições: <b>$refeicoes</b><br>";
-			echo "Outros custos no trecho: <b>$outrosCustos</b><br>";
+			echo "data da caminhada <b>$dia</b><br>";
+			echo "nome do atleta <b>$nome</b><br>";
+			echo "quantos quilos no inicio do exercicio: <b>$quilos</b><br>";
+			echo "tipo de exercicio: <b>$tipo</b><br>";
+			echo "hora do inincio da caminhada: <b>$horaSaida</b><hr>";
+            echo "tempo de percurso: <b>$tempo</b><br>";
+			echo "distancia percorrida: <b>$distancia</b><br>";		
 			echo "Observações quanto ao percurso: <b>$obs</b><br>";
 		
 			
 			// 4 - Abrindo o banco de dados
-			// .1- Conexão com o servidor	
-
-		
+			// .1- Conexão com o servidor			
 			
 			$con = mysqli_connect("localhost","root", "");
 			
 			// .2 - Abertura do banco de dados
 
 			
-			mysqli_select_db($con, "travel") or 
+			mysqli_select_db($con, "caminhada") or 
 				die(
 					"Erro na abertura do banco de dados!: <br>" .
 					mysqli_error($con)
@@ -103,33 +97,23 @@
 			// 5 - Tentativa de inserção de registro
 			// .1 - Criação da variável com o comando de inserção SQL
 			
-			$sql="INSERT INTO travelDates (	
+			$sql="INSERT INTO caminhadas (	
 						dia, 
-                        localSaida, 
-                        dataSaida, 
+                        nome, 
+                        quilos, 
+                        tipo, 
                         horaSaida, 
-                        dataChegada, 
-                        horaChegada,
-                        localChegada, 
-                        kmPercorrido, 
-                        gasolina, 
-                        pedagio, 
-                        refeicoes, 
-                        outrosCustos, 
+                        tempo,
+                        distancia,                        
                         obs					
                         ) VALUES(
 						'$dia', 
-						'$localSaida',  
-						'$dataSaida',  
-						'$horaSaida',
-                        '$dataChegada', 
-						'$horaChegada',  
-						'$localChegada',  
-						'$kmPercorrido',
-                        '$gasolina',  
-						'$pedagio',  
-						'$refeicoes',
-                        '$outrosCustos',                 
+						'$nome',  
+						'$quilos',  
+						'$tipo',
+                        '$horaSaida', 
+						'$tempo',  
+						'$distancia', 					                
 						'$obs' )";
 			
 			// Visualizar o comando e testar p/ ver se não está com erros
@@ -141,11 +125,11 @@
 						mysqli_error($con)
 				);
 			
-			echo "travelDates <b >$dia </b> incluído com sucesso!";			
+			echo "caminhadas <b >$dia</b> incluído com sucesso!";			
 		?>
 		
 		<br>
-		Clique <a href="index.html">aqui</a> para cadastrar um novo trecho<br>
+		Clique <a href="index.html">aqui</a> para cadastrar uma nova camminhada<br>
 		Clique <a href="listagem.php">aqui</a> para listar os dados cadastrados<br>
 	</body>
 </html> 

@@ -53,14 +53,14 @@
 			$con = mysqli_connect("localhost", "root", "");
 			
 			// 3 - Abrir o banco de dados
-			mysqli_select_db($con, "travel") or 
+			mysqli_select_db($con, "caminhada") or 
 				die(
 					"Erro na abertura do banco de dados:<br>" . mysqli_error($con)
 				);
 			
 			// 4 - Montar comando de exclusão
 
-			$sql = "DELETE FROM travelDates WHERE id=$id";
+			$sql = "DELETE FROM caminhadas WHERE id=$id";
 			
 			// - Exibir o comando na tela
 			// die($sql);
@@ -68,10 +68,10 @@
 			// 5 - Enviar comando p/ MYSQL
 			mysqli_query($con, $sql) or 
 				die(
-					"Erro exclusão do trecho :<br>" . mysqli_error($con)
+					"Erro exclusão da caminhada:<br>" . mysqli_error($con)
 				);
 			// aqui é porque conseguiu excluir
-			echo "Trecho da viajem <b>$id</b> excluído com sucesso!";
+			echo "Dados da caminhada <b>$id</b> excluído com sucesso!";
 		?>
 		<hr>
 		Clique <a href="listagem.php">aqui</a> para a Listagem dos trechos.
