@@ -1,16 +1,23 @@
-form.form-example {
-    display: table;
+.corpo {
+    background-color: rgb(241, 241, 209);
 }
 
-div.form-example {
+.formulario {
+    background-color: rgb(240, 215, 182);
+    display: flexbox;
+    align-items: center;
+    width: 50%;
+    margin: 15%;
+    justify-content: space-around;
+}
+
+.input {
     display: table-row;
 }
 
-label, input {
+.outros {
     display: table-cell;
     margin-bottom: 10px;
 }
 
-label {
-    padding-right: 10px;
-}
+.label {}

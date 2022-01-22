@@ -3,35 +3,32 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-		<title> Inclusão de dados do trecho </title>
+
+		<title> Inclusão de dados da caminhada </title>
+
 		<link rel="preconnect" href="https://fonts.googleapis.com">
     	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     	<link rel="preconnect" href="https://fonts.googleapis.com">
    		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    	<link rel="stylesheet" href="assets/estilos/estilos.css">
+    
 	</head>
 	<body class="listagem">
-		<h1> Sistema Gerencial de Dados </h1>
-		<h3> incluir os dados do trecho </h3>
+		<h1> Sistema de Dados </h1>
+		<h3> incluir os dados da caminhada </h3>
 
 		<?php			
 			// Variável			
 			// 1. Receber os dados do formulário em variáveis
 
-			$dia		 = $_GET["dia"] ;
-			$localSaida	 = $_GET["localSaida"] ;
-			$dataSaida	 = $_GET["dataSaida"] ;
-			$horaSaida	 = $_GET["horaSaida"] ;
-			$dataChegada = $_GET["dataChegada"] ;
-            $horaChegada = $_GET["horaChegada"] ;
-            $localChegada= $_GET["localChegada"] ;
-			$kmPercorrido= $_GET["kmPercorrido"] ;
-			$gasolina	 = $_GET["gasolina"] ;
-			$pedagio	 = $_GET["pedagio"] ;
-			$refeicoes	 = $_GET["refeicoes"] ;
-            $outrosCustos= $_GET["outrosCustos"] ;
-			$obs		 = $_GET["obs"] ;    
+			$dia		= $_GET["dia"] ;
+			$nome 		= $_GET["nome"] ;
+			$quilos	 	= $_GET["quilos"] ;
+			$tipo	 	= $_GET["tipo"] ;
+			$horaSaida	= $_GET["horaSaida"] ;
+            $tempo		= $_GET["tempo"] ;
+			$distancia	= $_GET["distancia"] ;		
+			$obs		= $_GET["obs"] ;    
 			
 			// 2. Validar alguns dados básicos		
 			
@@ -41,51 +38,31 @@
 				die("O<b>dia</b> deve ser informado. Sistema interrompido.");
 			}
 			
-			if ($localSaida==" ")
+			if ($nome==" ")
 			{
-				die("O <b> localSaida </b> deve ser informado. Sistema interrompido.");
+				die("O <b> nome </b> deve ser informado. Sistema interrompido.");
 			}
 			
-			if ($dataSaida==" ")
+			if ($quilos==" ")
 			{
-				die("informe a <b>dataSaida</b> válida. Sistema interrompido.");
+				die("informe a <b>quilos</b> válida. Sistema interrompido.");
 			}
+
             if ($horaSaida==" ")
 			{
 				die("Informe  <b>horaSaida</b> válida. Sistema interrompido.");
 			}
-            if ($dataChegada==" ")
+
+            if ($tempo=" ")
 			{
-				die("Escolha um <b>tipo</b> válida. Sistema interrompido.");
+				die("Escolha um <b>tempo</b> válida. Sistema interrompido.");
 			}
-            if ($horaChegada==" ")
+
+            if ($distancia==" ")
 			{
-				die(" Informe <b>horaChegada</b> válida. Sistema interrompido.");
+				die(" Informe <b>distancia</b> válida. Sistema interrompido.");
 			}
-            if ($localChegada==" ")
-			{
-				die("Informe <b>localChegada </b> válido. Sistema interrompido.");
-			}
-            if ($kmPercorrido==" ")
-			{
-				die("Informe<b> kmPercorrido </b> válido. Sistema interrompido.");
-			}
-            if ($gasolina==" ")
-			{
-				die("Informe <b>gasolina </b> válido. Sistema interrompido.");
-			}
-            if ($pedagio==" ")
-			{
-				die("Informe <b> pedagio </b> válido. Sistema interrompido.");
-			}
-            if ($refeicoes==" ")
-			{
-				die("Informe <b> refeicoes </b> válido. Sistema interrompido.");
-			}
-            if ($outrosCustos==" ")
-			{
-				die("Informe <b>outrosCustos</b> válido. Sistema interrompido.");
-			}
+			           
             if ($obs==" ")
 			{
 				die("Informe <b>obs</b> válido. Sistema interrompido.");
