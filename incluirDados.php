@@ -61,7 +61,7 @@
 			}
 			if ($resultado=="")
 			{
-				die(" Informe <b>distancia</b> válida. Sistema interrompido.");
+				die(" Informe <b>resultado</b> válida. Sistema interrompido.");
 			}
 
             if ($obs=="")
