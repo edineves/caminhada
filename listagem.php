@@ -3,21 +3,23 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 		<link rel="stylesheet" href="assets/reset.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	
-		<link rel="stylesheet" href="assets/estilos/estilos.css">
+    	<link rel="preconnect" href="https://fonts.googleapis.com">
+    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    	<link rel="preconnect" href="https://fonts.googleapis.com">
+    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    	<link rel="stylesheet" href="assets/estilos/estilos.css">
+    	<link rel="stylesheet" href="excluirDados.php">
+    	<link rel="stylesheet" href="listagem.php">
+    	<link rel="stylesheet" href="incluirDados.php">
 
 		<title> caminhadas </title>
+
 	</head>
 
-	<body class="listagem">
+	<body class="corpo">
 		<h1>Sistema de Dados </h1>
 		<h3>Listagem de dados</h3>
 		
@@ -143,12 +145,8 @@
 			echo "</table>";			
 		?>
 
-		<hr>	
-		<br>
-		
-		Clique <a href="index.html">aqui</a> para cadastrar uma nova caminhada <br> <br>
-		Clique <a href="listagem.php">aqui</a> para listar os dados cadastrados<br> <br>
-	    Clique <a href="excluirDados.php">aqui</a> para excluir Dados cadastrados <br>
-
+		<hr>		
+		<br> Clique <a href="index.html">aqui</a> para cadastrar uma nova camminhada<br>
+    	<br> Clique <a href="listagem.php">aqui</a> para listar os dados cadastrados<br>
 	</body>
 </html>

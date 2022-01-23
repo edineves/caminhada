@@ -1,18 +1,29 @@
 .corpo {
-    background-color: rgb(241, 241, 209);
+    background-color: rgb(197, 197, 175);
+    background-image: url();
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+    ;
 }
 
 .formulario {
     background-color: rgb(240, 215, 182);
-    display: flexbox;
     align-items: center;
-    width: 50%;
-    margin: 15%;
+    width: 60%;
+    margin: 5% 15%;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .input {
     display: table-row;
+    align-items: center;
+    width: 60%;
+    text-align: center;
 }
 
 .outros {
@@ -20,4 +31,6 @@
     margin-bottom: 10px;
 }
 
-.label {}
+.listagem {
+    text-align: center;
+}
