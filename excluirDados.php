@@ -4,22 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title> travel Datas </title>
-
-    <link rel="stylesheet" href="assets/estilos/reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    <link rel="stylesheet" href="assets/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="assets/estilos/estilos.css">
+    <link rel="stylesheet" href="excluirDados.php">
+    <link rel="stylesheet" href="listagem.php">
+    <link rel="stylesheet" href="incluirDados.php">
+
+    <title> caminhadas  </title>    
 
 </head>
-<body class="listagem">
-		<h1>Gerencial</h1>
-		<h3> Exclusão de trecho</h3>
+<body class="corpo">
+		<h1> Gerencial </h1>
+		<h3> Exclusão da caminhada </h3>
 		<hr>
 		<?php
 			/* 
@@ -74,7 +76,8 @@
 			echo "Dados da caminhada <b>$id</b> excluído com sucesso!";
 		?>
 		<hr>
-		Clique <a href="listagem.php">aqui</a> para a Listagem dos trechos.
+		<br> Clique <a href="index.html">aqui</a> para cadastrar uma nova camminhada<br>
+    	<br> Clique <a href="listagem.php">aqui</a> para listar os dados cadastrados<br>
 	</body>
 </html>
 

@@ -5,16 +5,19 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
 		<title> Inclusão de dados da caminhada </title>
-
+		
 		<link rel="stylesheet" href="assets/reset.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
+    	<link rel="preconnect" href="https://fonts.googleapis.com">
     	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     	<link rel="preconnect" href="https://fonts.googleapis.com">
-   		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    	<link rel="stylesheet" href="assets/estilos/estilos.css">
+    	<link rel="stylesheet" href="excluirDados.php">
+    	<link rel="stylesheet" href="listagem.php">
+    	<link rel="stylesheet" href="incluirDados.php">    
 	</head>
-	<body class="listagem">
+	<body class="corpo">
 		<h1> Sistema de Dados </h1>
 		<h3> incluir os dados da caminhada </h3>
 
@@ -34,37 +37,42 @@
 			// 2. Validar alguns dados básicos		
 			
 			
-			if ($dia==" ") 
+			if ($dia=="") 
 			{
 				die("O<b>dia</b> deve ser informado. Sistema interrompido.");
 			}
 			
-			if ($nome==" ")
+			if ($nome=="")
 			{
-				die("O <b> nome </b> deve ser informado. Sistema interrompido.");
+				die("O <b>nome</b> deve ser informado. Sistema interrompido.");
 			}
 			
-			if ($quilos==" ")
+			if ($quilos=="")
 			{
 				die("informe a <b>quilos</b> válida. Sistema interrompido.");
 			}
 
-            if ($horaSaida==" ")
+			if ($tipo=="")
+			{
+				die("Informe <b>tipo</b> válida. Sistema interrompido.");
+			}
+
+            if ($horaSaida=="")
 			{
 				die("Informe  <b>horaSaida</b> válida. Sistema interrompido.");
 			}
 
-            if ($tempo=" ")
+            if ($tempo="")
 			{
 				die("Escolha um <b>tempo</b> válida. Sistema interrompido.");
 			}
 
-            if ($distancia==" ")
+            if ($distancia=="")
 			{
 				die(" Informe <b>distancia</b> válida. Sistema interrompido.");
 			}
 
-            if ($obs==" ")
+            if ($obs=="")
 			{
 				die("Informe <b>obs</b> válido. Sistema interrompido.");
 			}
@@ -83,12 +91,12 @@
 			// 4 - Abrindo o banco de dados
 			// .1- Conexão com o servidor			
 			
-			$con = mysqli_connect("localhost","root", "");
+			$con = mysqli_connect("localhost","root","");
 			
 			// .2 - Abertura do banco de dados
 
 			
-			mysqli_select_db($con, "caminhada") or 
+			mysqli_select_db($con,"caminhada") or 
 				die(
 					"Erro na abertura do banco de dados!: <br>" .
 					mysqli_error($con)
@@ -125,11 +133,11 @@
 						mysqli_error($con)
 				);
 			
-			echo "caminhadas <b >$dia</b> incluído com sucesso!";			
+			echo "caminhadas <b>$dia</b> incluído com sucesso!";	
+			
 		?>
-		
-		<br>
-		Clique <a href="index.html">aqui</a> para cadastrar uma nova camminhada<br>
-		Clique <a href="listagem.php">aqui</a> para listar os dados cadastrados<br>
+		<hr>		   
+    	<br> Clique <a href="index.html">aqui</a> para cadastrar uma nova camminhada<br>
+    	<br> Clique <a href="listagem.php">aqui</a> para listar os dados cadastrados<br>	
 	</body>
 </html> 
