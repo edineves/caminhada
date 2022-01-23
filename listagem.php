@@ -3,17 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-		<link rel="stylesheet" href="assets/reset.css">
-    	<link rel="preconnect" href="https://fonts.googleapis.com">
-    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    	<link rel="preconnect" href="https://fonts.googleapis.com">
-    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    	<link rel="stylesheet" href="assets/estilos/estilos.css">
-    	<link rel="stylesheet" href="excluirDados.php">
-    	<link rel="stylesheet" href="listagem.php">
-    	<link rel="stylesheet" href="incluirDados.php">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">			
 
 		<title> caminhadas </title>
 
@@ -92,8 +82,8 @@
 			echo "	<th> peso </th>";
 			echo "	<th> tipo </th>";
 			echo "	<th> hora de saida </th>";
-			echo "	<th> tempo </th>";
-			echo "	<th> distancia percorrida </th>";	
+			echo "	<th> distancia </th>";
+			echo "	<th> resultado </th>";	
 			echo "	<th> obs </th>";
 			echo "	<th colspan='2'> Ações </th>";
 			echo "</tr>";		
@@ -116,8 +106,8 @@
 			$quilos 	= $dados["quilos"];
 			$tipo 		= $dados["tipo"];
 			$horaSaida 	= $dados["horaSaida"];
-			$tempo		= $dados["tempo"];
 			$distancia	= $dados["distancia"];
+			$resultado	= $dados["resultado"];
 			$obs  		= $dados["obs"];				
 				
 			// Exibindo $dados das variáveis
@@ -132,8 +122,8 @@
 				echo "	<td align='center'> $quilos </td>";
 				echo "	<td align='center'> $tipo </td>";
 				echo "	<td align='center'> $horaSaida </td>";
-				echo "	<td align='center'> $tempo </td>";
-				echo "	<td align='center'> $distancia </td>";				
+				echo "	<td align='center'> $distancia </td>";
+				echo "	<td align='center'> $resultado </td>";				
 				echo "	<td align='center'> $obs </td>";
 					
 				echo "	<td align='center'> <a href='excluirDados.php?id=$id&dia=$dia'> <img src=' ' alt='excluir dia $dia' title='excluir $dia'> </a> </td>";
