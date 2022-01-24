@@ -11,20 +11,20 @@
 }
 
 .cabecalho {
+    display: grid;
     background-color: aqua;
     height: 50px;
 }
 
 .principal {
-    grid-template-rows: 33% 33% 33%;
+    display: grid;
+    grid-template-rows: 50%;
     background-color: rgb(238, 192, 132);
     height: calc(80vh - 50px);
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .rodape {
+    display: grid;
     align-items: center;
     text-align: center;
 }
