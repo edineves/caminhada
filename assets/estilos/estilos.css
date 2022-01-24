@@ -5,24 +5,27 @@
     font-weight: 500;
     grid-template-areas: "cabecalho" "conteudo" "rodape";
     grid-template-columns: auto;
-    grid-template-rows: 50px 70vh auto;
+    grid-template-rows: 5px 100vh auto;
     align-items: center;
     text-align: center;
-    padding: 2%;
+}
+
+.cabecalho {
+    background-color: aqua;
+    grid-area: cabecalho;
 }
 
 .principal {
-    background-color: rgb(240, 215, 182);
+    background-color: rgb(238, 192, 132);
     align-items: center;
-    width: 60%;
-    margin: 5% 15%;
     justify-content: space-around;
     flex-wrap: wrap;
+    grid-area: principal;
 }
 
-.input {
+.rodape {
     display: table-row;
     align-items: center;
-    width: 60%;
     text-align: center;
+    grid-area: rodape;
 }
