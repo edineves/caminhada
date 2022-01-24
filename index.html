@@ -12,53 +12,48 @@
 
 <body class="app">
     <header class="cabecalho">
-        <p> caminhada </p>
+        <p> ** caminhada ** </p>
     </header>
     <main class="principal">
         <form action="incluirDados.php" method="get ">
             <div class=" input ">
-                <label for="dia "> dia </label>
+                <label for="dia "> dia: </label>
                 <input type="date " name="dia " id="dia " required>
             </div>
             <div class="input ">
-                <label for="nome "> nome </label>
+                <label for="nome "> nome: </label>
                 <input type="text " name="nome " id="nome " required>
             </div>
-            <div class="input ">
-                <label for="quilos "> peso </label>
+            <div class="input">
+                <label for="quilos "> peso: </label>
                 <input type="text " name="quilos " id="quilos " required>
             </div>
 
-            <fieldset class="input ">
-                <legend> Tipo </legend>
-                <label><input type="radio " name="tipo " value="caminhada "> caminhada </label>
-                <label><input type="radio " name="tipo " value="bicicleta "> bicicleta </label>
+            <fieldset class="input">
+                Tipo:
+                <label><input type="radio" name="tipo" value="caminhada" checked> caminhada </label>
+                <label><input type="radio" name="tipo" value="bicicleta"> bicicleta </label>
             </fieldset>
 
             <div class="input ">
-                <label for="horaSaida "> hora de início </label>
+                <label for="horaSaida "> hora de início: </label>
                 <input type="time " name="horaSaida " id="horaSaida " required>
             </div>
-
             <div class="input ">
-                <label for="distancia "> distância </label>
+                <label for="distancia "> distância: </label>
                 <input type="number " name="distancia " id="distancia " required>
             </div>
-
             <div class="input ">
-                <label for="resultado "> resultado </label>
+                <label for="resultado "> resultado: </label>
                 <input type="time " name="resultado " id="resultado " required>
             </div>
-
             <div class="input ">
                 <label for="obs "> observações </label>
                 <input type="text " name="obs " id="obs " required>
             </div>
-
-            <div class="input__botao ">
-                <input type="submit ">
+            <div class="input__botao">
+                <input type="submit">
             </div>
-
         </form>
     </main>
     <footer class="rodape ">
