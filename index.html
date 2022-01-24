@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/estilos/estilos.css">
+    <title> caminhada </title>
+</head>
+
+<body class="app">
+    <header class="cabecalho">
+        <p> caminhada </p>
+    </header>
+    <main class="principal">
+        <form action="incluirDados.php" method="get">
+            <div class="input">
+                <label for="dia"> dia </label>
+                <input type="date" name="dia" id="dia" required>
+            </div>
+            <div class="input">
+                <label for="nome"> nome </label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="input">
+                <label for="quilos"> peso </label>
+                <input type="text" name="quilos" id="quilos" required>
+            </div>
+
+            <fieldset class="input">
+                <legend> Tipo </legend>
+                <label><input type="radio" name="tipo" value="caminhada"> caminhada </label>
+                <label><input type="radio" name="tipo" value="bicicleta"> bicicleta </label>
+            </fieldset>
+
+            <div class="input">
+                <label for="horaSaida"> hora de início </label>
+                <input type="time" name="horaSaida" id="horaSaida" required>
+            </div>
+
+            <div class="input">
+                <label for="distancia"> distância </label>
+                <input type="number" name="distancia" id="distancia" required>
+            </div>
+
+            <div class="input">
+                <label for="resultado"> resultado </label>
+                <input type="time" name="resultado" id="resultado" required>
+            </div>
+
+            <div class="input">
+                <label for="obs"> observações </label>
+                <input type="text" name="obs" id="obs" required>
+            </div>
+
+            <div class="input__botao">
+                <input type="submit">
+            </div>
+
+        </form>
+    </main>
+    <footer class="rodape">
+        <hr>
+        <br> Clique <a href="index.html">aqui</a> para cadastrar uma nova caminhada<br>
+        <br> Clique <a href="listagem.php">aqui</a> para listar os dados cadastrados<br>
+    </footer>
+</body>
+
+</html>

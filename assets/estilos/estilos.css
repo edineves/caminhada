@@ -1,36 +1,30 @@
-.corpo {
-    background-color: rgb(197, 197, 175);
-    background-image: url();
+.app {
+    background-color: rgb(245, 245, 191);
+    display: grid;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
+    grid-template-areas: "cabecalho" "conteudo" "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 50px 90vw auto;
     align-items: center;
     text-align: center;
-    width: 100%;
-    padding: 2%;
-    ;
 }
 
-.formulario {
-    background-color: rgb(240, 215, 182);
+.cabecalho {
+    display: grid;
+    background-color: aqua;
+    height: 50px;
+}
+
+.principal {
+    display: grid;
+    grid-template-rows: 50%;
+    background-color: rgb(238, 192, 132);
+    height: calc(80vh - 50px);
+}
+
+.rodape {
+    display: grid;
     align-items: center;
-    width: 60%;
-    margin: 5% 15%;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.input {
-    display: table-row;
-    align-items: center;
-    width: 60%;
-    text-align: center;
-}
-
-.outros {
-    display: table-cell;
-    margin-bottom: 10px;
-}
-
-.listagem {
     text-align: center;
 }
