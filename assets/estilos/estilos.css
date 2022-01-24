@@ -1,18 +1,17 @@
 .app {
-    background-color: rgb(233, 233, 158);
+    background-color: rgb(245, 245, 191);
     display: grid;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
     grid-template-areas: "cabecalho" "conteudo" "rodape";
     grid-template-columns: auto;
-    grid-template-rows: 50px 40vh auto;
+    grid-template-rows: 50px 70vh auto;
     align-items: center;
     text-align: center;
     padding: 2%;
-    ;
 }
 
-.formulario {
+.principal {
     background-color: rgb(240, 215, 182);
     align-items: center;
     width: 60%;
@@ -25,14 +24,5 @@
     display: table-row;
     align-items: center;
     width: 60%;
-    text-align: center;
-}
-
-.outros {
-    display: table-cell;
-    margin-bottom: 10px;
-}
-
-.listagem {
     text-align: center;
 }
