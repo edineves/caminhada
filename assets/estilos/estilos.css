@@ -5,7 +5,7 @@
     font-weight: 500;
     grid-template-areas: "cabecalho" "conteudo" "rodape";
     grid-template-columns: auto;
-    grid-template-rows: 55px 90vw auto;
+    grid-template-rows: 55px 70vh auto;
     align-items: center;
     text-align: center;
 }
@@ -24,7 +24,9 @@
 }
 
 .rodape {
+    background-color: brown;
     display: grid;
     align-items: center;
     text-align: center;
+    height: auto;
 }
