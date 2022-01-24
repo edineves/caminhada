@@ -1,11 +1,11 @@
 .app {
-    background-color: rgb(245, 245, 191);
+    background-color: rgb(218, 218, 200);
     display: grid;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
     grid-template-areas: "cabecalho" "conteudo" "rodape";
     grid-template-columns: auto;
-    grid-template-rows: 50px 90vw auto;
+    grid-template-rows: 55px 90vw auto;
     align-items: center;
     text-align: center;
 }
@@ -19,7 +19,7 @@
 .principal {
     display: grid;
     grid-template-rows: 50%;
-    background-color: rgb(238, 192, 132);
+    background-color: rgb(138, 134, 130);
     height: calc(80vh - 50px);
 }
 
