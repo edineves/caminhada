@@ -1,8 +1,13 @@
 .app {
-    background-color: rgb(218, 218, 200);
+    background-image: url(../imgs/fundo1.jpg);
+    background-color: rgb(209, 207, 202);
+    background-position: cover;
+    background-position: 10% 20%;
+    position: relative;
     display: grid;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
+    font-size: 2rem;
     grid-template-areas: "cabecalho" "conteudo" "rodape";
     grid-template-columns: auto;
     grid-template-rows: 55px auto auto;
@@ -12,12 +17,12 @@
 
 .cabecalho {
     display: grid;
-    background-color: aqua;
+    background-color: transparent;
     height: 50px;
 }
 
 .principal {
-    background-color: rgb(182, 167, 150);
+    background-color: transparent;
     display: grid;
     height: auto;
     align-items: center;
@@ -25,9 +30,10 @@
 }
 
 .rodape {
-    background-color: brown;
+    background-color: transparent;
     display: grid;
     align-items: center;
+    justify-content: space-around;
     text-align: center;
     height: auto;
 }
