@@ -13,10 +13,12 @@
 .cabecalho {
     background-color: aqua;
     grid-area: cabecalho;
+    height: 20px;
 }
 
 .principal {
     background-color: rgb(238, 192, 132);
+    height: calc(90vh - 20px);
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
