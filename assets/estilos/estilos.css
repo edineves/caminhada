@@ -19,8 +19,10 @@
 .principal {
     display: grid;
     grid-template-rows: 50%;
-    background-color: rgb(138, 134, 130);
-    height: calc(80vh - 50px);
+    background-color: rgb(175, 171, 166);
+    height: calc (90vh - 50px);
+    align-items: center;
+    text-align: center;
 }
 
 .rodape {
