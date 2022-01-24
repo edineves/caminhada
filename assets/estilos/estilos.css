@@ -5,7 +5,7 @@
     font-weight: 500;
     grid-template-areas: "cabecalho" "conteudo" "rodape";
     grid-template-columns: auto;
-    grid-template-rows: 5px 100vh auto;
+    grid-template-rows: 50px 70vw auto;
     align-items: center;
     text-align: center;
 }
@@ -20,12 +20,10 @@
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    grid-area: principal;
 }
 
 .rodape {
     display: table-row;
     align-items: center;
     text-align: center;
-    grid-area: rodape;
 }
