@@ -1,11 +1,13 @@
-.corpo {
-    background-color: rgb(197, 197, 175);
-    background-image: url();
+.app {
+    background-color: rgb(233, 233, 158);
+    display: grid;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
+    grid-template-areas: "cabecalho" "conteudo" "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 50px 40vh auto;
     align-items: center;
     text-align: center;
-    width: 100%;
     padding: 2%;
     ;
 }
