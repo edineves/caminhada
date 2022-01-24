@@ -16,54 +16,58 @@
     <header>
         <title> caminhada </title>
     </header>
-    <form action="incluirDados.php" method="get" class="formulario">
-        <div class="input">
-            <label for="dia"> dia </label>
-            <input type="date" name="dia" id="dia" required>
-        </div>
-        <div class="input">
-            <label for="nome"> nome </label>
-            <input type="text" name="nome" id="nome" required>
-        </div>
-        <div class="input">
-            <label for="quilos"> peso </label>
-            <input type="text" name="quilos" id="quilos" required>
-        </div>
+    <main>
+        <form action="incluirDados.php" method="get" class="formulario">
+            <div class="input">
+                <label for="dia"> dia </label>
+                <input type="date" name="dia" id="dia" required>
+            </div>
+            <div class="input">
+                <label for="nome"> nome </label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="input">
+                <label for="quilos"> peso </label>
+                <input type="text" name="quilos" id="quilos" required>
+            </div>
 
-        <fieldset>
-            <legend> Tipo </legend>
-            <label><input type="radio" name="tipo" value="caminhada"> caminhada </label>
-            <label><input type="radio" name="tipo" value="bicicleta"> bicicleta </label>
-        </fieldset>
+            <fieldset>
+                <legend> Tipo </legend>
+                <label><input type="radio" name="tipo" value="caminhada"> caminhada </label>
+                <label><input type="radio" name="tipo" value="bicicleta"> bicicleta </label>
+            </fieldset>
 
-        <div class="input">
-            <label for="horaSaida"> hora de início </label>
-            <input type="time" name="horaSaida" id="horaSaida" required>
-        </div>
+            <div class="input">
+                <label for="horaSaida"> hora de início </label>
+                <input type="time" name="horaSaida" id="horaSaida" required>
+            </div>
 
-        <div class="input">
-            <label for="distancia"> distância </label>
-            <input type="number" name="distancia" id="distancia" required>
-        </div>
+            <div class="input">
+                <label for="distancia"> distância </label>
+                <input type="number" name="distancia" id="distancia" required>
+            </div>
 
-        <div class="input">
-            <label for="resultado"> resultado </label>
-            <input type="time" name="resultado" id="resultado" required>
-        </div>
+            <div class="input">
+                <label for="resultado"> resultado </label>
+                <input type="time" name="resultado" id="resultado" required>
+            </div>
 
-        <div class="input">
-            <label for="obs"> observações </label>
-            <input type="text" name="obs" id="obs" required>
-        </div>
+            <div class="input">
+                <label for="obs"> observações </label>
+                <input type="text" name="obs" id="obs" required>
+            </div>
 
-        <div class="input__botao">
-            <input type="submit">
-        </div>
+            <div class="input__botao">
+                <input type="submit">
+            </div>
 
-    </form>
-    <hr>
-    <br> Clique <a href="index.html">aqui</a> para cadastrar uma nova camminhada<br>
-    <br> Clique <a href="listagem.php">aqui</a> para listar os dados cadastrados<br>
+        </form>
+    </main>
+    <footer>
+        <hr>
+        <br> Clique <a href="index.html">aqui</a> para cadastrar uma nova camminhada<br>
+        <br> Clique <a href="listagem.php">aqui</a> para listar os dados cadastrados<br>
+    </footer>
 </body>
 
 </html>
