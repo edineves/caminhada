@@ -1,13 +1,12 @@
 .app {
     background-image: url(../imgs/fundo1.jpg);
     background-color: rgb(209, 207, 202);
-    background-position: cover;
+    background-position: center;
     background-position: 10% 20%;
-    position: relative;
     display: grid;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.5rem;
     grid-template-areas: "cabecalho" "conteudo" "rodape";
     grid-template-columns: auto;
     grid-template-rows: 55px auto auto;
@@ -16,12 +15,20 @@
 }
 
 .cabecalho {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: rgb(247, 251, 235);
     display: grid;
     background-color: transparent;
     height: 50px;
 }
 
 .principal {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: rgb(234, 240, 220);
     background-color: transparent;
     display: grid;
     height: auto;
@@ -30,6 +37,10 @@
 }
 
 .rodape {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: rgb(233, 233, 43);
     background-color: transparent;
     display: grid;
     align-items: center;
